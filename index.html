@@ -3,367 +3,117 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Konnect Online Services | Fast, Reliable Services - Mbombela</title>
+  <title>Konnect Online Services | Fast, Reliable Services - All on WhatsApp - Mbombela</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: "Inter", sans-serif;
-      background: #fff;
-      color: #111;
-    }
-
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: "Inter", sans-serif; background: #fff; color: #111; }
     header {
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 14px 5%;
-      border-bottom: 2px solid #ffb800;
-      background: #ffffff;
+      position: sticky; top: 0; z-index: 999;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 14px 5%; border-bottom: 2px solid #ffb800; background: #ffffff;
       transition: all 0.3s ease;
     }
-
     header.scrolled {
-      padding: 8px 5%;
-      background: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
+      padding: 8px 5%; background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     }
-
     #logo {
-      font-family: "Poppins", sans-serif;
-      font-weight: 900;
-      font-size: 30px;
-      line-height: 1;
-      letter-spacing: -1px;
-      text-transform: uppercase;
+      font-family: "Poppins", sans-serif; font-weight: 900; font-size: 30px;
+      line-height: 1; letter-spacing: -1px; text-transform: uppercase;
       transition: all 0.3s ease;
     }
-
-    header.scrolled #logo {
-      font-size: 22px;
-    }
-
+    header.scrolled #logo { font-size: 22px; }
     .quote-btn-header {
-      background: #111;
-      color: #ffb800;
-      border: 2px solid #ffb800;
-      padding: 9px 18px;
-      border-radius: 8px;
-      font-weight: 700;
-      font-size: 14px;
-      cursor: pointer;
-      transition: 0.2s;
-      text-decoration: none;
+      background: #111; color: #ffb800; border: 2px solid #ffb800;
+      padding: 9px 18px; border-radius: 8px; font-weight: 700; font-size: 14px;
+      cursor: pointer; transition: 0.2s; text-decoration: none;
     }
-
-    .quote-btn-header:hover {
-      background: #ffb800;
-      color: #111;
-    }
-
+    .quote-btn-header:hover { background: #ffb800; color: #111; }
     .hero {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      padding: 50px 5%;
-      gap: 30px;
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      padding: 50px 5%; gap: 30px;
     }
-
     .btn-yellow {
-      background: #ffb800;
-      color: #111;
-      padding: 14px 26px;
-      border-radius: 8px;
-      font-weight: 800;
-      text-decoration: none;
-      display: inline-block;
-      border: 2px solid #ffb800;
-      cursor: pointer;
-      transition: 0.2s;
+      background: #ffb800; color: #111; padding: 14px 26px; border-radius: 8px;
+      font-weight: 800; text-decoration: none; display: inline-block;
+      border: 2px solid #ffb800; cursor: pointer; transition: 0.2s;
     }
-
-    .btn-yellow:hover {
-      background: #111;
-      color: #ffb800;
-    }
-
+    .btn-yellow:hover { background: #111; color: #ffb800; }
     .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 20px;
     }
-
     .card {
-      background: #fff;
-      border-radius: 16px;
-      padding: 22px;
-      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
-      border: 2px solid #ffb800;
+      background: #fff; border-radius: 16px; padding: 22px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06); border: 2px solid #ffb800;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-    }
-
-    .card h3 {
-      margin-bottom: 10px;
-      font-size: 1.2rem;
-    }
-
-    .card ul {
-      list-style: disc;
-      margin-left: 18px;
-      color: #333;
-      line-height: 1.8;
-    }
-
-    .price {
-      margin: 14px 0;
-      font-weight: 800;
-      font-size: 1.1rem;
-    }
-
-    .price span {
-      color: #ffb800;
-    }
-
+    .card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); }
+    .card h3 { margin-bottom: 10px; font-size: 1.2rem; }
+    .card ul { list-style: disc; margin-left: 18px; color: #333; line-height: 1.8; }
+    .price { margin: 14px 0; font-weight: 800; font-size: 1.1rem; }
+    .price span { color: #ffb800; }
     .order {
-      display: block;
-      text-align: center;
-      background: #111;
-      color: #ffb800;
-      padding: 11px;
-      border-radius: 8px;
-      text-decoration: none;
-      margin-top: 12px;
-      font-weight: 700;
-      border: 2px solid #ffb800;
-      transition: all 0.2s ease;
+      display: block; text-align: center; background: #111; color: #ffb800;
+      padding: 11px; border-radius: 8px; text-decoration: none; margin-top: 12px;
+      font-weight: 700; border: 2px solid #ffb800; transition: all 0.2s ease;
     }
-
-    .order:hover {
-      background: #ffb800;
-      color: #111;
-    }
-
+    .order:hover { background: #ffb800; color: #111; }
     .footer {
-      background: #111;
-      color: #fff;
-      padding: 40px 5%;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 12px;
+      background: #111; color: #fff; padding: 40px 5%; text-align: center;
+      display: flex; flex-direction: column; align-items: center; gap: 12px;
     }
-
-    /* --- QUOTATION MODAL --- */
     .modal-overlay {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.6);
-      backdrop-filter: blur(4px);
-      z-index: 1000;
-      align-items: center;
-      justify-content: center;
-      padding: 15px;
+      display: none; position: fixed; inset: 0; background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(4px); z-index: 1000; align-items: center; justify-content: center; padding: 15px;
     }
-
-    .modal-overlay.active {
-      display: flex;
-    }
-
+    .modal-overlay.active { display: flex; }
     .modal-box {
-      background: #fff;
-      width: 100%;
-      max-width: 480px;
-      border-radius: 18px;
-      padding: 28px;
-      position: relative;
-      border: 2px solid #ffb800;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+      background: #fff; width: 100%; max-width: 480px; border-radius: 18px; padding: 28px;
+      position: relative; border: 2px solid #ffb800; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
       animation: pop 0.3s ease;
     }
-
-    @keyframes pop {
-      from {
-        transform: scale(0.9);
-        opacity: 0;
-      }
-      to {
-        transform: scale(1);
-        opacity: 1;
-      }
-    }
-
-    .modal-box h3 {
-      font-family: "Poppins", sans-serif;
-      font-weight: 800;
-      font-size: 22px;
-      margin-bottom: 4px;
-    }
-
-    .modal-box p {
-      font-size: 13px;
-      color: #666;
-      margin-bottom: 18px;
-    }
-
+    @keyframes pop { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+    .modal-box h3 { font-family: "Poppins", sans-serif; font-weight: 800; font-size: 22px; margin-bottom: 4px; }
+    .modal-box p { font-size: 13px; color: #666; margin-bottom: 18px; }
     .close-modal {
-      position: absolute;
-      top: 14px;
-      right: 14px;
-      background: #f3f3f3;
-      border: none;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      cursor: pointer;
-      font-weight: 800;
+      position: absolute; top: 14px; right: 14px; background: #f3f3f3; border: none;
+      width: 30px; height: 30px; border-radius: 50%; cursor: pointer; font-weight: 800;
     }
-
-    .form-group {
-      margin-bottom: 14px;
+    .form-group { margin-bottom: 14px; }
+    .form-group label { font-size: 13px; font-weight: 700; display: block; margin-bottom: 5px; }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%; padding: 11px 12px; border-radius: 8px; border: 1.5px solid #ddd;
+      font-family: "Inter", sans-serif; font-size: 14px; outline: none; transition: 0.2s;
     }
-
-    .form-group label {
-      font-size: 13px;
-      font-weight: 700;
-      display: block;
-      margin-bottom: 5px;
-    }
-
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-      width: 100%;
-      padding: 11px 12px;
-      border-radius: 8px;
-      border: 1.5px solid #ddd;
-      font-family: "Inter", sans-serif;
-      font-size: 14px;
-      outline: none;
-      transition: 0.2s;
-    }
-
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus {
-      border-color: #ffb800;
-    }
-
-    .form-group textarea {
-      resize: none;
-      height: 80px;
-    }
-
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: #ffb800; }
+    .form-group textarea { resize: none; height: 80px; }
     .submit-quote {
-      width: 100%;
-      background: #111;
-      color: #ffb800;
-      border: 2px solid #ffb800;
-      padding: 13px;
-      border-radius: 8px;
-      font-weight: 800;
-      font-size: 15px;
-      cursor: pointer;
-      transition: 0.2s;
-      margin-top: 6px;
+      width: 100%; background: #111; color: #ffb800; border: 2px solid #ffb800;
+      padding: 13px; border-radius: 8px; font-weight: 800; font-size: 15px;
+      cursor: pointer; transition: 0.2s; margin-top: 6px;
     }
-
-    .submit-quote:hover {
-      background: #ffb800;
-      color: #111;
-    }
-
-    button,
-    a,
-    input,
-    select,
-    textarea {
-      -webkit-tap-highlight-color: transparent;
-    }
-
-    button:focus-visible,
-    a:focus-visible,
-    input:focus-visible,
-    select:focus-visible,
-    textarea:focus-visible {
-      outline: 3px solid #111;
-      outline-offset: 3px;
-    }
-
+    .submit-quote:hover { background: #ffb800; color: #111; }
+    button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+    button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid #111; outline-offset: 3px; }
     @media (max-width: 600px) {
-      header {
-        padding: 12px 4%;
-      }
-
-      #logo {
-        font-size: 19px;
-      }
-
-      header.scrolled #logo {
-        font-size: 17px;
-      }
-
-      .quote-btn-header {
-        padding: 8px 10px;
-        font-size: 12px;
-      }
-
-      .hero {
-        padding: 42px 5% 35px;
-      }
-
-      .hero h1 {
-        font-size: 31px !important;
-      }
-
-      .hero p {
-        font-size: 14px;
-      }
-
-      .hero > div:last-child {
-        font-size: 58px !important;
-      }
-
-      .cards {
-        grid-template-columns: 1fr;
-      }
-
-      .card {
-        padding: 19px;
-      }
-
-      .modal-box {
-        padding: 24px 18px;
-        max-height: 92vh;
-        overflow-y: auto;
-      }
-
-      .footer {
-        font-size: 14px;
-      }
+      header { padding: 12px 4%; }
+      #logo { font-size: 19px; }
+      header.scrolled #logo { font-size: 17px; }
+      .quote-btn-header { padding: 8px 10px; font-size: 12px; }
+      .hero { padding: 42px 5% 35px; }
+      .hero h1 { font-size: 31px !important; }
+      .hero p { font-size: 14px; }
+      .hero > div:last-child { font-size: 58px !important; }
+      .cards { grid-template-columns: 1fr; }
+      .card { padding: 19px; }
+      .modal-box { padding: 24px 18px; max-height: 92vh; overflow-y: auto; }
+      .footer { font-size: 14px; }
     }
   </style>
 </head>
@@ -372,6 +122,7 @@
     <div id="logo">
       <span style="color:#FFB800">Konnect</span>
       <span style="color:#111">ONLINE SERVICES</span>
+      <div style="font-size:10px;font-weight:600;color:#666;letter-spacing:0.3px;margin-top:3px;text-transform:none;">Documents • Design • Websites — All on WhatsApp</div>
     </div>
     <button class="quote-btn-header" onclick="openQuoteModal()">Get Your Quotation</button>
   </header>
@@ -381,10 +132,10 @@
       <h1 style="font-family:'Poppins',sans-serif;font-size:38px;line-height:1.1;font-weight:900;">
         Fast.<br>
         Reliable Services.<br>
-        <span style="color:#FFB800">Your Digital Partner.</span>
+        <span style="color:#FFB800">All on WhatsApp.</span>
       </h1>
       <p style="margin:16px 0 24px;color:#555;">
-        Mbombela's trusted online café — CVs, design, websites & more.
+        Mbombela's trusted online service — CVs, design, websites & more. All done on WhatsApp, no queue.
       </p>
       <button class="btn-yellow" onclick="openQuoteModal()">Get Your Free Quotation →</button>
     </div>
@@ -393,7 +144,6 @@
 
   <section style="padding:40px 5%;background:#faf8f5">
     <h2 style="text-align:center;font-weight:900;font-size:32px;font-family:'Poppins',sans-serif;">OUR SERVICES</h2>
-
     <div class="cards" style="margin-top:20px">
       <div class="card">
         <h3>Document & Career Services</h3>
@@ -405,7 +155,6 @@
         <div class="price"><span>From</span> R80</div>
         <a class="order" href="https://wa.me/27820597719?text=Hi%20Konnect,%20I%20need%20CV%20Service">Order on WhatsApp</a>
       </div>
-
       <div class="card">
         <h3>Design & Print-Ready</h3>
         <ul>
@@ -415,7 +164,6 @@
         <div class="price"><span>From</span> R120</div>
         <a class="order" href="https://wa.me/27820597719?text=Hi%20Konnect,%20I%20need%20Design">Order on WhatsApp</a>
       </div>
-
       <div class="card">
         <h3>Cyber Café Basics</h3>
         <ul>
@@ -425,7 +173,6 @@
         <div class="price"><span>From</span> R20</div>
         <a class="order" href="https://wa.me/27820597719?text=Hi%20Konnect,%20I%20need%20Cyber%20Cafe%20help">Order on WhatsApp</a>
       </div>
-
       <div class="card" style="background:#FFFEF5">
         <h3>🌐 Static Website & Online Presence - NEW</h3>
         <ul>
@@ -436,7 +183,6 @@
         <div class="price"><span>From</span> R650</div>
         <a class="order" href="https://wa.me/27820597719?text=Hi%20Konnect,%20I%20want%20a%20static%20website">Order on WhatsApp</a>
       </div>
-
       <div class="card">
         <h3>Digital Access & Support</h3>
         <ul>
@@ -451,6 +197,7 @@
   <footer class="footer">
     <div style="font-weight:800; font-size:18px;">Konnect ONLINE SERVICES</div>
     <div>
+      Documents • Design • Websites — All on WhatsApp<br>
       Mbombela, South Africa<br>
       WhatsApp: 0820597719<br>
       Email: deneo.webworks@gmail.com
@@ -460,131 +207,35 @@
     </div>
   </footer>
 
-  <!-- QUOTATION MODAL -->
-  <div
-    class="modal-overlay"
-    id="quoteModal"
-    role="dialog"
-    aria-modal="true"
-    aria-labelledby="quoteTitle"
-  >
+  <div class="modal-overlay" id="quoteModal" role="dialog" aria-modal="true" aria-labelledby="quoteTitle">
     <div class="modal-box">
-      <button
-        class="close-modal"
-        onclick="closeQuoteModal()"
-        aria-label="Close quotation form"
-        type="button"
-      >
-        ✕
-      </button>
-
-      <h3 id="quoteTitle">
-        Get Your <span style="color:#FFB800">Free Quotation</span>
-      </h3>
+      <button class="close-modal" onclick="closeQuoteModal()" aria-label="Close quotation form" type="button">✕</button>
+      <h3 id="quoteTitle">Get Your <span style="color:#FFB800">Free Quotation</span></h3>
       <p>Fill this and we will reply on WhatsApp in minutes</p>
-
-      <div class="form-group">
-        <label>Your Name</label>
-        <input
-          id="qName"
-          type="text"
-          placeholder="e.g. Thabo"
-          autocomplete="name"
-          required
-        />
-      </div>
-
-      <div class="form-group">
-        <label>WhatsApp Number</label>
-        <input
-          id="qPhone"
-          type="tel"
-          placeholder="e.g. 082..."
-          autocomplete="tel"
-          required
-        />
-      </div>
-
-      <div class="form-group">
-        <label>Service Needed</label>
-        <select id="qService" required>
-          <option value="">Select a service</option>
-          <option>Document & Career Services (CV, Cover Letter)</option>
-          <option>Design & Print-Ready (Poster, Logo, Flyer)</option>
-          <option>Cyber Café Basics (Typing, Printing)</option>
-          <option>Static Website & Online Presence - NEW</option>
-          <option>Digital Access & Support</option>
-          <option>Other - Explain below</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label>Project Details</label>
-        <textarea id="qDetails" placeholder="Tell us what you need... e.g. 3 page website for my salon with price list"></textarea>
-      </div>
-
-      <div class="form-group">
-        <label>Budget / Urgency</label>
-        <select id="qBudget">
-          <option value="">Select</option>
-          <option>Urgent - Today</option>
-          <option>Within 2-3 Days</option>
-          <option>Budget: R50 - R150</option>
-          <option>Budget: R150 - R500</option>
-          <option>Budget: R650+ (Website)</option>
-          <option>Not sure - Need advice</option>
-        </select>
-      </div>
-
-      <button class="submit-quote" onclick="sendQuote()" type="button">
-        Get Quote on WhatsApp →
-      </button>
+      <div class="form-group"><label>Your Name</label><input id="qName" type="text" placeholder="e.g. Thabo" autocomplete="name" required /></div>
+      <div class="form-group"><label>WhatsApp Number</label><input id="qPhone" type="tel" placeholder="e.g. 082..." autocomplete="tel" required /></div>
+      <div class="form-group"><label>Service Needed</label><select id="qService" required><option value="">Select a service</option><option>Document & Career Services (CV, Cover Letter)</option><option>Design & Print-Ready (Poster, Logo, Flyer)</option><option>Cyber Café Basics (Typing, Printing)</option><option>Static Website & Online Presence - NEW</option><option>Digital Access & Support</option><option>Other - Explain below</option></select></div>
+      <div class="form-group"><label>Project Details</label><textarea id="qDetails" placeholder="Tell us what you need... e.g. 3 page website for my salon with price list"></textarea></div>
+      <div class="form-group"><label>Budget / Urgency</label><select id="qBudget"><option value="">Select</option><option>Urgent - Today</option><option>Within 2-3 Days</option><option>Budget: R50 - R150</option><option>Budget: R150 - R500</option><option>Budget: R650+ (Website)</option><option>Not sure - Need advice</option></select></div>
+      <button class="submit-quote" onclick="sendQuote()" type="button">Get Quote on WhatsApp →</button>
     </div>
   </div>
 
   <script>
     const quoteModal = document.getElementById("quoteModal");
     const mainHeader = document.getElementById("mainHeader");
-
-    window.addEventListener("scroll", () => {
-      mainHeader.classList.toggle("scrolled", window.scrollY > 20);
-    });
-
-    function openQuoteModal() {
-      quoteModal.classList.add("active");
-      document.getElementById("qName").focus();
-      document.body.style.overflow = "hidden";
-    }
-
-    function closeQuoteModal() {
-      quoteModal.classList.remove("active");
-      document.body.style.overflow = "";
-    }
-
-    quoteModal.addEventListener("click", (event) => {
-      if (event.target === quoteModal) {
-        closeQuoteModal();
-      }
-    });
-
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && quoteModal.classList.contains("active")) {
-        closeQuoteModal();
-      }
-    });
-
+    window.addEventListener("scroll", () => { mainHeader.classList.toggle("scrolled", window.scrollY > 20); });
+    function openQuoteModal() { quoteModal.classList.add("active"); document.getElementById("qName").focus(); document.body.style.overflow = "hidden"; }
+    function closeQuoteModal() { quoteModal.classList.remove("active"); document.body.style.overflow = ""; }
+    quoteModal.addEventListener("click", (event) => { if (event.target === quoteModal) { closeQuoteModal(); } });
+    document.addEventListener("keydown", (event) => { if (event.key === "Escape" && quoteModal.classList.contains("active")) { closeQuoteModal(); } });
     function sendQuote() {
       const name = document.getElementById("qName").value.trim();
       const phone = document.getElementById("qPhone").value.trim();
       const service = document.getElementById("qService").value;
       const details = document.getElementById("qDetails").value.trim();
       const budget = document.getElementById("qBudget").value;
-
-      if (!name || !phone || !service) {
-        alert("Please enter your name, WhatsApp number, and select a service.");
-        return;
-      }
-
+      if (!name || !phone || !service) { alert("Please enter your name, WhatsApp number, and select a service."); return; }
       const message = [
         "NEW QUOTATION REQUEST - Konnect Online Services",
         "",
@@ -596,11 +247,7 @@
         "",
         "Sent from the website quotation form."
       ].join("\n");
-
-      const whatsappUrl =
-        "https://wa.me/27820597719?text=" +
-        encodeURIComponent(message);
-
+      const whatsappUrl = "https://wa.me/27820597719?text=" + encodeURIComponent(message);
       window.open(whatsappUrl, "_blank", "noopener,noreferrer");
       closeQuoteModal();
     }
