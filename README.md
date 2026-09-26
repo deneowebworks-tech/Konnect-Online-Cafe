@@ -1,6 +1,6 @@
-# Konnect Online Cafe
+# KonnectOnlineServices
 
-Konnect Online Cafe is a modern one-page business website for a local online service provider based in Mbombela, South Africa. The site showcases services such as CV and career support, design and print-ready materials, cyber café basics, digital support, and static website creation.
+KonnectOnlineServices is a modern one-page business website for a local online service provider based in Mbombela, South Africa. The site showcases services such as CV and career support, design and print-ready materials, cyber café basics, digital support, and static website creation.
 
 The project is built as a lightweight static HTML landing page with a clean, professional design and direct WhatsApp ordering for customer enquiries and quotations.
 
